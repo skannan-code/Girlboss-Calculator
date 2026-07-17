@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Girlboss Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="page-title">Girlboss Calculator</h1>
+
+<div class="main-content">
+  <div class="calculator-wrapper">
+  <div class="calculator">
+    <input type="text" id="display" readonly>
+
+    <div class="buttons">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="append('/')">÷</button>
+      <button onclick="append('*')">×</button>
+      <button onclick="append('-')">−</button>
+
+      <button onclick="append('7')">7</button>
+      <button onclick="append('8')">8</button>
+      <button onclick="append('9')">9</button>
+      <button onclick="append('+')">+</button>
+
+      <button onclick="append('4')">4</button>
+      <button onclick="append('5')">5</button>
+      <button onclick="append('6')">6</button>
+      <button onclick="calculate()" rowspan="2">=</button>
+
+      <button onclick="append('1')">1</button>
+      <button onclick="append('2')">2</button>
+      <button onclick="append('3')">3</button>
+
+      <button onclick="append('0')">0</button>
+      <button onclick="append('.')">.</button>
+      <button onclick="setLoveMessage()" class="love-button">I love</button>
+    </div>
+  </div>
+
+  <div class="notepad">
+    <div class="notepad-title">Notes</div>
+    <textarea placeholder="Hey queen! Write down your girlboss ideas here..."></textarea>
+  </div>
+  </div>
+</div>
+
+<img class="bottom-flower-image" src="girlboss_flower.png" alt="Girlboss Flower">
+<img class="flower-image" src="girlboss_flower.png" alt="Girlboss Flower">
+<img class="heart-image" src="heart_girlboss.png" alt="Girlboss Heart">
+<img class="second-heart-image" src="heart_girlboss.png" alt="Another Heart">
+
+<script src="script.js"></script>
+</body>
+</html>
